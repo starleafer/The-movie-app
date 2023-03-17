@@ -1,17 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Movie from './Movie'
+import myStyle from './myStyle.module.css'
 
-const MovieList = (movies) => {
+
+//  {Title: , Year: , imdbID: , Type: , Poster: '}
+
+const MovieList = ({movies}) => {
+  const movieList = movies.Search.map(movie => (
+    <li key={movie.imdbID} >
+      <section className={myStyle.movieCard}>
+      <h3 className={myStyle.movieTitle}>{movie.Title}</h3>
+      <p className={myStyle.movieTitle}>{movie.Year} {movie.Type}</p>
+      <img src={movie.Poster} className={myStyle.poster}alt="" />
+      
+      </section>
+    </li>
+));
+  
+  
   return (
     <>
-      <ul>
-        {/* <li>
-            <h3>{movies.title}</h3>
-            <p>{MovieList.Type}</p>
-            <p>{MovieList.Year}</p>
-            <section>{MovieList.Poster}</section>
-        </li> */}
-      </ul>
+      <ul className={myStyle.movielist}>{movieList}</ul>
       <Movie />
     </>
     
