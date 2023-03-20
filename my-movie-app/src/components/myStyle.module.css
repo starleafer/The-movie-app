@@ -18,14 +18,27 @@
     align-items: center;
 }
 
+.formSection {
+    margin-bottom: 100px;
+}
+
+#yearType {
+    margin-bottom: 10px;
+}
+
 h1 {
-  font-size: 3.2em;
+  font-size: 4em;
+  width: 490px;
   line-height: 1.1;
   margin-bottom: 5px;
+  color: bisque;
+  text-shadow: 4px 4px rgb(255, 42, 5);
   
 }
 
+
 i {
+    color: bisque;
     font-size: 15px;
     padding-right: 15px;
 }
@@ -34,41 +47,53 @@ select {
     margin-left: 15px;
 }
 
-/* h3 {
-    font-size: 21px;
-    height: 57px;
-    margin: 0;
-} */
+h3 {
+    font-weight: 800;
+}
+
 
 .movielist {
     margin: 0 auto;
     list-style: none;
     width: 90%;
     padding-left: 80px;
-    gap: 30px;
+    gap: 50px 30px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .inputs {
     padding: 10px;
-    /* width: 300px; */
-    font-size: 18px;    
+    font-size: 18px;  
+    color: bisque;  
 }
 .movieCard {
     width: 300px;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+}
+
+/* .movieCard:hover {
+background-color: #0e0d0d;
+color: bisque;
+text-shadow: 3px 3px  #ca2323;
+} */
+
+.poster:hover {
+    box-shadow: 3px 6px 10px 9px bisque;
 }
 
 .movieTitle {
+    margin: 2px;
+    padding-top: 10px;
+    padding-left: 10px;
     vertical-align: top;
-    margin: 5px;
+    color: rgb(255, 255, 255);
     
 }
 
 .poster {
-    margin-bottom: 40px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #161616;
 }
@@ -76,8 +101,10 @@ select {
 .footer {
     border-top: 1px solid grey;
     width: 100%;
-    margin: 0 auto;
+    height: 250px;
+    margin: 40px auto;
 }
+
 
 .error {
     color: #ca2323;
