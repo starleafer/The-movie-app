@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import myStyle from './myStyle.module.css'
 
 
-const Form = ({state, selectedType, setSelectedType, onChange,  errorMessage}) => {
+const Form = ({state, selectedType, setSelectedType, onChange, movies, totalResults, page, handleNextPage, handlePrevPage, handlePrevPageEnabled, errorMessage}) => {
 
 
   return (
@@ -19,6 +19,19 @@ const Form = ({state, selectedType, setSelectedType, onChange,  errorMessage}) =
           <option value="game">Game</option>
         </select>
         <p className={myStyle.error}>{errorMessage}</p>     
+        <div className={myStyle.pageNav}>
+          <button 
+            className={myStyle.pageButtons} 
+            onClick={handlePrevPageEnabled ? (e) => handlePrevPage(e) : null}
+            >&lt;Previous Page
+          </button>
+          <h4>Page {page} of {Math.floor(totalResults / 10)}</h4>
+          <button 
+            className={myStyle.pageButtons} 
+            id={myStyle.next}onClick={handleNextPage}
+            >Next Page &gt;
+          </button>
+        </div>
       </form>
     </>
   )
