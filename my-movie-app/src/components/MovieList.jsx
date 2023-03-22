@@ -1,10 +1,9 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Movie from './Movie'
 import myStyle from './myStyle.module.css'
 
 const MovieList = ({ filterMovies }) => {
   
-
   return (
     <ul>
       <li key={filterMovies.imdbID} className={myStyle.movielist}>

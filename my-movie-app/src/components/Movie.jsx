@@ -1,7 +1,6 @@
 import React from 'react'
 import myStyle from './myStyle.module.css'
 
-
 const Movie = ({filterMovies}) => {
   const theMovies = filterMovies.filter((movie) => movie).map((movie) => (
     <section  key={movie.imdbID} className={myStyle.movieCard}>

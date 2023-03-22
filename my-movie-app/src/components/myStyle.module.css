@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;700&family=Righteous&display=swap');
 
 *{
     font-family: 'Poppins';
@@ -26,17 +26,23 @@
     margin-bottom: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
+font-family: "Righteous";
   font-size: 4em;
   width: 490px;
   line-height: 1.1;
-  margin: 50px 0 5px 0;
+  margin: 50px 0 5px 50px;
   color: bisque;
   text-shadow: 4px 4px rgb(255, 42, 5);
 }
 
 
 i {
+    font-family: "Righteous";
     color: bisque;
     font-size: 15px;
     padding-right: 15px;
@@ -76,19 +82,12 @@ h4 {
     height: 49px;
     border-radius: 2px;
     color: bisque;
-    /* box-shadow: 2px 2px rgb(255, 42, 5); */
 }
-
-#next {
-}
-
 
 
 h3 {
     font-weight: 800;
 }
-
-
 
 .movielist {
     margin: 0 auto;
@@ -107,12 +106,6 @@ h3 {
     border-radius: 20px;   
 }
 
-/* .movieCard:hover {
-background-color: #0e0d0d;
-color: bisque;
-text-shadow: 3px 3px  #ca2323;
-} */
-
 .pageButtons:hover {
     background-color: #636363;
 }
@@ -126,8 +119,7 @@ text-shadow: 3px 3px  #ca2323;
     padding-top: 10px;
     padding-left: 10px;
     vertical-align: top;
-    color: rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255); 
 }
 
 .poster {
@@ -139,10 +131,8 @@ text-shadow: 3px 3px  #ca2323;
     border-top: 1px solid rgb(107, 97, 85);
     width: 100%;
     height: 250px;
-    margin: 80px auto;
+    margin: 100px auto 190px auto;
 }
-
-
 
 .error {
     color: #ca2323;
