@@ -10,9 +10,8 @@ const Header = () => {
   return (
     <header className={myStyle.headerSection}>
         <a onClick={reloadPage}href="">
-          <h1 >Movie Night</h1>
+          <h1 className={myStyle.neon}>Movie Night</h1>
         </a>
-        <i>Built with OMDB API</i>
     </header>
   )
 }

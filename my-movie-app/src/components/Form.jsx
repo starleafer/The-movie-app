@@ -1,7 +1,17 @@
 import React from 'react'
 import myStyle from './myStyle.module.css'
 
-const Form = ({ state, selectedType, setSelectedType, onChange, totalResults, page, handleNextPage, handlePrevPage, handlePrevPageEnabled, errorMessage}) => {
+const Form = ({ state,
+  selectedType,
+  setSelectedType,
+  onChange,
+  totalResults,
+  page,
+  handleNextPage,
+  handlePrevPage,
+  handlePrevPageEnabled,
+  errorMessage 
+}) => {
 
   if (state === "" || errorMessage) {
     page = 0;
@@ -32,7 +42,7 @@ const Form = ({ state, selectedType, setSelectedType, onChange, totalResults, pa
           className={myStyle.pageButtons} 
           onClick={handlePrevPageEnabled ? (e) => handlePrevPage(e) : null}
           >
-            &lt;Previous Page
+            &lt; Previous Page
         </button>
         <h4>
           Page {page} of {Math.floor(totalResults / 10)}

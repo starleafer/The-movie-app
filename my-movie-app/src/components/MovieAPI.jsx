@@ -57,7 +57,7 @@ const MovieAPI = () => {
     setPage(page - 1);
   }
 
-  //Need to add function to make 'Next page'-button unclickable if there are no more pages
+  //Need to add function to make 'Next page'-button disabled if there are no more pages
 
   const handlePrevPageEnabled = (page !== 1)
 
