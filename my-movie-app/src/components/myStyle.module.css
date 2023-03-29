@@ -59,7 +59,14 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px;   
+    position: relative;
+    top: 0;
+    transition: top 0.2s ease-in-out;
 }
+
+.movieCard:hover {
+    top: -10px;
+  }
 
 
 .movieTitle {
@@ -103,8 +110,11 @@
     background-color: #222222;
 }
 
-.movieCard:hover{
+.poster:hover {
     box-shadow:  0 0 1.8em bisque;
+}
+
+.movieCard:hover{
     text-shadow: 0 0 0.125em rgb(223, 58, 29),
    0 0 0.45em rgb(255, 42, 5);
 }
