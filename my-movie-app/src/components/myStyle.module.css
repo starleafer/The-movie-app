@@ -45,10 +45,12 @@
 
 
 .movielist {
+    display: flex;
+    justify-content: space-evenly;
     margin: 0 auto;
     list-style: none;
-    width: 90%;
-    /* padding-left: 40px; */
+    width: 70%;
+    /* padding: 0 40px; */
     gap: 50px 30px;
     display: flex;
     flex-wrap: wrap;
